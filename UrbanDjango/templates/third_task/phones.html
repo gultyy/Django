@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Phones</title>
+</head>
+<body>
+    <h1>Телефоны</h1>
+    <ul>
+        {% for phone, but in phones.items %}
+            <li>{{ phone }}
+                <button>{{ but }}</button>
+            </li>
+        {% endfor %}
+    </ul>
+    <a href="http://127.0.0.1:8000/task3/">
+        <button>Вернуться обратно</button>
+    </a>
+</body>
+</html>
